@@ -1,0 +1,3 @@
+This script is designed to download SRA data files for a list of specified accession IDs and convert them into FASTQ format. It begins by setting a directory where the downloaded files will be saved and ensures that the necessary tools from the sratoolkit are accessible. If the designated download directory does not already exist, the script creates it.
+
+Next, it retrieves data for each accession ID using the prefetch command. Once the SRA files are downloaded, the script converts them into FASTQ format with the fasterq-dump command. Finally, it outputs a message indicating that the download and conversion processes have been successfully completed.
